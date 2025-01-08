@@ -1,0 +1,15 @@
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter num value:");
+        int n1=scan.nextInt();
+        System.out.print("Enter num2 value:");
+        int n2=scan.nextInt();
+        int z=n2++; //post increment
+        System.out.println("After post increment n2 value is:"+n2);
+        int y;
+        int x=++n1; //pre increment
+        System.out.println("After pre increment n1 value is:"+n1);
+    }
+}
