@@ -1,0 +1,25 @@
+import java.util.*;
+import java.math.*;
+class Main{
+    public static void main(String args[]){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter your choice: ");
+        int choice=scan.nextInt();
+        switch(choice){
+        case 1: double pi=3.14;
+                System.out.print("Enter radius: ");
+                int r=scan.nextInt();
+                double circle=pi*r*r;
+                System.out.println("Area of circle: "+circle);
+                break;
+        case 2: System.out.print("Enter Length: ");
+                int l=scan.nextInt();
+                System.out.print("Enter Breadth: ");
+                int b=scan.nextInt();
+               double rect_area=l*b;
+                System.out.println("Area of rectangle: "+rect_area);
+                break;
+        default:System.out.println("Invalid choice");       
+        } 
+    }
+}
