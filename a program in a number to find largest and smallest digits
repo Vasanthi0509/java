@@ -1,0 +1,26 @@
+/*enter a value:8090
+largest digit=9
+smallest digit=0*/
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter a value:");
+        int num=scan.nextInt();
+        int rem=num%10;
+        int largest=rem;
+        int smallest=rem;
+        while(num>0){
+           int digit=num%10;
+            if(digit>=largest){
+                largest=digit;
+            }
+            else if(digit<=smallest){
+                smallest=digit;
+            }
+            num=num/10;
+        }
+        System.out.println("Largest digit is:"+largest);
+        System.out.println("smallest digit is:"+smallest);
+    }
+}
