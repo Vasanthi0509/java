@@ -1,0 +1,23 @@
+import java.util.*;
+import java.math.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int n1=scan.nextInt();
+        System.out.print("Enter a  number:");
+        int n2=scan.nextInt();
+        System.out.print("Enter a  number:");
+        int n3=scan.nextInt();
+        int m1=n1*n1;
+        int m2=n2*n2;
+        int sum=m1+m2;
+        double square=Math.sqrt(sum);
+        if(square==n3){
+            System.out.println("pythagorean triplet");
+        }
+        else{
+            System.out.println("Not pythagorean triplet");
+        }
+    }
+}
