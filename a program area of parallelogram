@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        int b=scan.nextInt();
+        int h=scan.nextInt();
+        if(b>0 && h>0){
+            int area=b*h;
+             System.out.print(area);
+        }
+       
+        else{
+            System.out.println("java.lang.Exception: Breadth and height must be positive");
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+
+}
