@@ -1,0 +1,20 @@
+import java.util.*;
+
+class Main {
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter n value: ");
+        int n = scan.nextInt();
+           while (n >= 0) {
+            System.out.print(n + " ");
+            n = n - 1;  
+        }
+        System.out.println();  
+        n = 0;
+        while (n <= 10) {
+            System.out.print(n + " ");
+            n = n + 1; 
+        }
+        System.out.println(); 
+    }
+}
