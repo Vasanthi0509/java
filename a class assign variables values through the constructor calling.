@@ -1,0 +1,19 @@
+class Student{
+    int stdrollno;
+    String stdname;
+    String stdmail;
+    String stdlocation;
+     Student( int stdrollno,String stdname,String stdmail,String stdlocation){
+        this.stdrollno=stdrollno;
+        this.stdname=stdname;
+        this.stdmail=stdmail;
+        this.stdlocation=stdlocation;
+    }
+    public static void main(String args[]){
+        Student m=new Main(1,"John","abc@gmail.com","Chennai");
+        System.out.println("stdnumber is:"+m.stdrollno);
+        System.out.println("stdname is:"+m.stdname);
+        System.out.println("stdmail is:"+m.stdmail);
+        System.out.println("stdlocation is:"+m.stdlocation);
+    }
+}
